@@ -41,22 +41,20 @@
     <header id="header" class="header d-flex align-items-center sticky-top">
         <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-            <a href="index.html" class="logo d-flex align-items-center me-auto">
-                <!-- Uncomment the line below if you also wish to use an image logo -->
-                <!-- <img src="assets/img/logo.png" alt=""> -->
+            <a href="#" class="logo d-flex align-items-center me-auto">
                 <h1 class="sitename">M - Tugas</h1>
             </a>
 
             <nav id="navmenu" class="navmenu">
                 <ul>
-                    <li><a href="#hero" class="active">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#hero" class="active">Beranda</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="#contact">Kontak</a></li>
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
 
-            <a class="btn-getstarted" href="index.html#about">Login</a>
+            <a class="btn-getstarted" href="{{ route('login') }}">Login</a>
 
         </div>
     </header>
@@ -88,8 +86,8 @@
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-                <span>About Us<br></span>
-                <h2>About</h2>
+                <span>Tentang Kami<br></span>
+                <h2>Tentang Kami</h2>
                 <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
             </div><!-- End Section Title -->
 
@@ -97,8 +95,7 @@
 
                 <div class="row gy-4">
                     <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
-                        <img src="assets/img/about.png" class="img-fluid" alt="">
-                        <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
+                        <img src="{{asset('enno/assets/img/about.png')}}" class="img-fluid" alt="">
                     </div>
                     <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
                         <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
@@ -127,16 +124,16 @@
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-                <span>Section Title</span>
-                <h2>Contact</h2>
+                <span>Kontak</span>
+                <h2>Kontak</h2>
                 <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
             </div><!-- End Section Title -->
 
             <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-                <div class="row gy-4">
+                <div class="row">
 
-                    <div class="col-lg-5">
+                    <div class="col">
 
                         <div class="info-wrap">
                             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
@@ -162,46 +159,11 @@
                                     <p>info@example.com</p>
                                 </div>
                             </div><!-- End Info Item -->
-
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1992.1901755456026!2d104.76246908855464!3d-2.991773999246067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b76034b851401%3A0x9b68f8209694f926!2sJemb.%20Ampera%2C%209%2F10%20Ulu%2C%20Kecamatan%20Seberang%20Ulu%20I%2C%20Kota%20Palembang%2C%20Sumatera%20Selatan!5e0!3m2!1sid!2sid!4v1750594606918!5m2!1sid!2sid" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
 
-                    <div class="col-lg-7">
-                        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-                            <div class="row gy-4">
 
-                                <div class="col-md-6">
-                                    <label for="name-field" class="pb-2">Your Name</label>
-                                    <input type="text" name="name" id="name-field" class="form-control" required="">
-                                </div>
-
-                                <div class="col-md-6">
-                                    <label for="email-field" class="pb-2">Your Email</label>
-                                    <input type="email" class="form-control" name="email" id="email-field" required="">
-                                </div>
-
-                                <div class="col-md-12">
-                                    <label for="subject-field" class="pb-2">Subject</label>
-                                    <input type="text" class="form-control" name="subject" id="subject-field" required="">
-                                </div>
-
-                                <div class="col-md-12">
-                                    <label for="message-field" class="pb-2">Message</label>
-                                    <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
-                                </div>
-
-                                <div class="col-md-12 text-center">
-                                    <div class="loading">Loading</div>
-                                    <div class="error-message"></div>
-                                    <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                                    <button type="submit">Send Message</button>
-                                </div>
-
-                            </div>
-                        </form>
-                    </div><!-- End Contact Form -->
 
                 </div>
 
@@ -220,7 +182,7 @@
                 <!-- You can delete the links only if you've purchased the pro version. -->
                 <!-- Licensing information: https://bootstrapmade.com/license/ -->
                 <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href=“https://themewagon.com>ThemeWagon
+
             </div>
         </div>
 
@@ -236,7 +198,7 @@
     <script src="{{asset ('enno/assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
     <script src="{{asset ('enno/assets/vendor/php-email-form/validate.js')}}"></script>
     <script src="{{asset ('enno/assets/vendor/aos/aos.js')}}"></script>
-    <script src="{{asset ('enno/assets/vendor/glightbox/js')}}/glightbox.min.js')}}"></script>
+    <script src="{{asset ('enno/assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
     <script src="{{asset ('enno/assets/vendor/purecounter/purecounter_vanilla.js')}}"></script>
     <script src="{{asset ('enno/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js')}}"></script>
     <script src="{{asset ('enno/assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
